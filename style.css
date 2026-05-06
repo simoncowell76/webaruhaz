@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 header{
+    margin: 0;
     grid-area: h;
 }
 nav a{
@@ -49,6 +50,7 @@ article{
     background-color: rgb(121, 121, 212);
 }
 footer{
+   
     text-align: center;
     padding: 20px;
     background-color: lightsteelblue;
@@ -76,4 +78,28 @@ main{
     "ar as"
     "f f"
     ;
+}
+@media screen and (max-width:800px) {
+    .aside {
+        height: auto; 
+        min-height: 550px;
+    }
+    .autok {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px;
+        padding: 10px;
+    }
+    
+}
+@media screen and (max-width:600px){
+    nav a{
+        padding: 5px;
+        display: block
+    }
+    .autok{
+        display: block;
+    }
+    main{
+        display: block;
+    }
 }
